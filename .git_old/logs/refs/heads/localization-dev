@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 166f34a7524e40e50e7f4b514b7caf5ec8833950 Jokšas Tadas <tadas.joksas@mif.stud.vu.lt> 1717072110 +0300	branch: Created from HEAD
+166f34a7524e40e50e7f4b514b7caf5ec8833950 cceb94d7bf977928bd12d6d6f8ee1f90894c080a Jokšas Tadas <tadas.joksas@mif.stud.vu.lt> 1717072214 +0300	commit: Implement localization feature
+cceb94d7bf977928bd12d6d6f8ee1f90894c080a c9529cfa4da6aaafb01c6ba654c6b937a7a390fc Jokšas Tadas <tadas.joksas@mif.stud.vu.lt> 1717084033 +0300	commit: Describe your changes here
+c9529cfa4da6aaafb01c6ba654c6b937a7a390fc 7178accd3177406c929101464a0653f8c89ddb5a Jokšas Tadas <tadas.joksas@mif.stud.vu.lt> 1717084715 +0300	commit (merge): Resolved merge conflicts with master
+7178accd3177406c929101464a0653f8c89ddb5a d0fc421ddb28cc99e79bd5be2c7a20e3447f2250 Jokšas Tadas <tadas.joksas@mif.stud.vu.lt> 1717085528 +0300	commit: fixed git push commit

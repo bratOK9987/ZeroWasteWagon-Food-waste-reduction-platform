@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://git.mif.vu.lt/olmo9929/zerowastewagon.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "partner-orders-dev"]
+	remote = origin
+	merge = refs/heads/partner-orders-dev
+[pull]
+	rebase = false
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "localization-dev"]
+	remote = origin
+	merge = refs/heads/localization-dev
+[branch "user-dev"]
+	vscode-merge-base = origin/partner-orders-dev

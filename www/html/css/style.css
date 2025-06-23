@@ -1,0 +1,50 @@
+/*@charset "utf8";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.containerButtons {
+    max-width: 1000px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 20px; /* Отступы внутри контейнера */
+    text-align: center; /* Выравнивание текста по центру */
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerText {
+    max-width: 1000px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 20px; /* Отступы внутри контейнера */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+html{height: 100%}
+
+body{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 20px; */
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1en;
+    line-height: 135%;
+    float: left;
+}
+
+header{
+    width: 98%;
+    float: left;
+    padding: 1%;
+    background-color: azure;
+    border-bottom: 2px solid silver;
+}
+
+select{
+    float: right;
+}
+*/

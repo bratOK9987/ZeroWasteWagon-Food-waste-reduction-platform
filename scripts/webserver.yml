@@ -1,0 +1,72 @@
+---
+- name: Configure the server
+  hosts: webservers
+  vars:
+    ansible_become_pass: "password"
+  tasks:
+    - name: 0. Check the connection
+      ping:
+
+    - name: Ensure the directory /var/lib/apt exists
+      become: true
+      file:
+        path: "/var/lib/apt"
+        state: directory
+        owner: root
+        group: root
+        mode: "0755"
+
+    - name: Ensure the directory /var/lib/apt/lists exists
+      become: true
+      file:
+        path: "/var/lib/apt/lists"
+        state: directory
+        owner: root
+        group: root
+        mode: "0755"
+
+    - name: Ensure the directory /var/lib/apt/lists/partial exists
+      become: true
+      file:
+        path: "/var/lib/apt/lists/partial"
+        state: directory
+        owner: root
+        group: root
+        mode: "0755"
+
+    - name: 1. Update Ubuntu
+      become: true
+      shell: apt-get update
+
+    - name: 2.1. Install Apache2
+      become: true
+      apt: name=apache2 state=latest
+
+    - name: 2.2. Install PHP and php-mbstring
+      become: true
+      apt:
+        name:
+          - libapache2-mod-php
+          - php-pgsql
+          - php-mbstring
+        state: present
+
+    # - name: 3. Remove all files and directories from /var/www/html
+    #   become: true
+    #   file:
+    #     state: "{{ item }}"
+    #     path: "/var/www/html"
+    #     owner: root
+    #     group: root
+    #     mode: "0755"
+    #   with_items:
+    #     - absent
+    #     - directory
+
+    # - name: 4. Install Git
+    #   become: true
+    #   apt: name=git state=latest
+
+    # - name: 5. Clone a public repository
+    #   become: true
+    #   shell: git clone https://git.mif.vu.lt/sest8864/web.git /var/www/html/web

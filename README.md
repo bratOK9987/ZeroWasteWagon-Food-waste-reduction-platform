@@ -2,7 +2,7 @@
 
 ## Team members:
 
- - *Oleskii morozov*
+ - *Oleskii Morozov*
  - *Tadas Jokšas*
 
 ## Project topic: *Food waste reduction platform*
